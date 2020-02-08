@@ -13,12 +13,12 @@
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
 <body class="bg-gray-100 h-screen antialiased leading-none">
-    <div class="w-full bg-black flex flex-row">
-        <div class="text-left flex-col">
-            <img src="{{ asset('images/JonZenor.png') }}" style="height: 75px" class="p-2">
+    <div class="w-full bg-black md:flex md:flex-row">
+        <div class="text-center md:text-left md:flex-col">
+            <a href="/"><img src="{{ asset('images/JonZenor.png') }}" class="p-2 sm:w-1/2 m-auto md:m-0 md:w-1/3"></a>
         </div>
 
-        <div class="text-right text-white m-2 w-full p-2">
+        <div class="text-center md:text-right text-white m-2 w-full p-2">
             <div class="h-full mt-4 mr-6">BLOG</div>
         </div>
     </div>
