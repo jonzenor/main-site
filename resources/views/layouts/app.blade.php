@@ -11,6 +11,7 @@
 
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Girassol|Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body class="bg-gray-100 h-screen antialiased leading-none">
     <div class="w-full bg-black md:flex md:flex-row">
