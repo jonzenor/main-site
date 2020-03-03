@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Jon Zenor &bull; Christian | Programmer | Photographer | Author</title>
 
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
@@ -16,7 +16,7 @@
 <body class="bg-gray-100 h-screen antialiased leading-none">
     <div class="w-full bg-black md:flex md:flex-row">
         <div class="text-center md:text-left md:flex-col">
-            <a href="/"><img src="{{ asset('images/JonZenor.png') }}" class="p-2 sm:w-1/2 m-auto md:m-0 md:w-1/3"></a>
+            <a href="/"><img src="{{ asset('images/JonZenor.png') }}" class="p-2 sm:w-1/2 m-auto md:mx-4 md:w-1/3"></a>
         </div>
 
         <div class="text-center md:text-right text-white m-2 w-full p-2">
