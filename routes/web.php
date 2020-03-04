@@ -16,6 +16,12 @@ Route::get('/', function () {
 });
 
 Route::get('/home', 'HomeController@index')->name('home');
+
 Auth::routes([
     'register' => false,
 ]);
+
+Route::get('/posts', 'BlogController@index')->name('blog');
+Route::get('/post/new', 'BlogController@create')->name('new-blog')->middleware('auth');
+Route::post('/post/new', 'BlogController@store')->name('store-blog')->middleware('auth');
+Route::get('/post/{slug}', 'BlogController@show')->name('view-blog');

@@ -12,6 +12,7 @@
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Girassol|Playfair+Display:600&display=swap" rel="stylesheet">
+    @trixassets
 </head>
 <body class="bg-gray-100 h-screen antialiased leading-none">
     <div class="w-full bg-black md:flex md:flex-row">
@@ -20,7 +21,12 @@
         </div>
 
         <div class="text-center md:text-right text-white m-2 w-full p-2">
-            <div class="h-full mt-4 mr-6">BLOG</div>
+            <div class="h-full mt-4 mr-6">
+                @can('see-admin')
+                    <a href="{{ route('home') }}" class="hover:underline hover:font-bold px-2">Admin</a>
+                @endcan
+                <a href="{{ route('blog') }}" class="hover:underline hover:font-bold">BLOG</a>
+            </div>
         </div>
     </div>
 
