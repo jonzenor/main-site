@@ -24,7 +24,7 @@
         </div>
     </div>
 
-    <div class="w-full h-full">
+    <div class="w-full h-full flex justify-center p-5">
         @yield('content')
     </div>
 

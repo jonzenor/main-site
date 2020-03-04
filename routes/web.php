@@ -16,6 +16,9 @@ Route::get('/', function () {
 });
 
 Route::get('/home', 'HomeController@index')->name('home');
+
 Auth::routes([
     'register' => false,
 ]);
+
+Route::get('/blog/new', 'BlogController@create')->name('new-blog')->middleware('auth');

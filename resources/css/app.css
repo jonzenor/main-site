@@ -60,3 +60,19 @@
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
+
+ .link {
+    @apply text-red-700;
+ }
+
+ .link:hover {
+    @apply text-red-500 underline;
+ }
+
+ .form-label {
+    @apply text-red-700 text-lg font-bold;
+ }
+
+ .form-input {
+    @apply p-2 rounded-sm w-1/3;
+ }

@@ -14025,6 +14025,27 @@ video {
  * @import "utilities/skew-transforms";
  */
 
+.link {
+  color: #c53030;
+}
+
+.link:hover {
+  color: #f56565;
+  text-decoration: underline;
+}
+
+.form-label {
+  color: #c53030;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.form-input {
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  width: 33.333333%;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;

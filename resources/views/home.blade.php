@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="flex items-center">
+    <div class="flex items-center m-2">
         <div class="md:w-1/2 md:mx-auto">
 
             @if (session('status'))
@@ -13,12 +13,16 @@
             <div class="flex flex-col break-words bg-white border border-2 rounded shadow-md">
 
                 <div class="font-semibold bg-gray-200 text-gray-700 py-3 px-6 mb-0">
-                    Dashboard
+                    Blogs
                 </div>
 
                 <div class="w-full p-6">
                     <p class="text-gray-700">
-                        You are logged in!
+                        @foreach ($blogs as $blog)
+
+                        @endforeach
+                        
+                        <a href="{{ route('new-blog') }}" class="link">New Blog</a>
                     </p>
                 </div>
             </div>
