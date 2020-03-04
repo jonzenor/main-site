@@ -21,4 +21,7 @@ Auth::routes([
     'register' => false,
 ]);
 
-Route::get('/blog/new', 'BlogController@create')->name('new-blog')->middleware('auth');
+Route::get('/posts', 'BlogController@index')->name('blog');
+Route::get('/post/new', 'BlogController@create')->name('new-blog')->middleware('auth');
+Route::post('/post/new', 'BlogController@store')->name('store-blog')->middleware('auth');
+Route::get('/post/{slug}', 'BlogController@show')->name('view-blog');
